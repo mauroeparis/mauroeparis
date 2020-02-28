@@ -11,22 +11,17 @@
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="bg-pattern text-white w-full h-full">
 
-    <div class="sm:hidden">xs</div>
-    <div class="hidden sm:block md:hidden">sm</div>
-    <div class="hidden md:block lg:hidden">md</div>
-    <div class="hidden lg:block xl:hidden">lg</div>
-    <div class="hidden xl:block">xl</div>
-
     <section class="
         flex justify-center 
-        mt-3 sm:mx-3
-        md:mt-3 md:mx-3
-        lg:mt-6 lg:mx-0
+        mt-24 md:mt-24 lg:mt-6
+        sm:mx-3 lg:mx-0
         xl:mt-10
     ">
         <div
@@ -44,7 +39,7 @@
             <h1 class="
                 text-xl leading-tight
                 sm:text-4xl md:text-6xl
-                text-center pt-6
+                text-center pt-6 font-quick font-medium
             ">
                 Hi, I'm Mauro
             </h1>
@@ -145,127 +140,21 @@
     </section>
 
     <section class="flex flex-col pt-24 w-full">
-        <div class="w-1/3 bg-gray-900 mx-auto rounded-lg shadow-lg">
+        <div class="px-8 bg-gray-900 mx-auto rounded-lg shadow-lg">
             <h1 class="
-                text-center font-medium text-gray-300
-                py-6 text-3xl uppercase
+                text-center text-gray-100
+                py-6 text-5xl lg:text-3xl tracking-widest
+                font-quick uppercase
             ">
                 Projects I've worked on
             </h1>
         </div>
     
-        <div class="flex flex-wrap justify-center pt-12 w-full">
-    
-            <div class="
-                flex rounded-lg bg-gray-100 border-4
-                shadow-lg items-center border-gray-100 m-3
-            ">
-                <img
-                    src="./img/invera.jpeg"
-                    class="w-48 h-48 object-cover rounded-lg"
-                    alt="Invera cover photo"
-                >
-                <div class="px-3">
-                    <ul class="
-                        list-inside pt-3 font-medium text-2xl
-                        lg:text-lg tracking-wide text-gray-800
-                    ">
-                        <li>
-                            Django + DRF Backend.
-                        </li>
-                        <li class="pt-3">
-                            Celery + Redis async task manager.
-                        </li>
-                        <li class="pt-3">
-                            HTML, Sass, Jinja and JQuery Frontend.
-                        </li>
-                        <li class="pt-3">
-                            Elastic Beanstalk and Ansible on EC2.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="
-                flex rounded-lg bg-gray-100 border-4
-                shadow-lg items-center border-gray-100 m-3
-            ">
-                <img 
-                    src="./img/confibra.png"
-                    class="w-48 h-48 object-cover rounded-lg"
-                    alt="Confibra cover image"
-                >
-                <div class="px-3">
-                    <ul class="
-                        list-inside pt-3 font-medium text-2xl 
-                        lg:text-lg tracking-wide text-gray-800
-                    ">
-                        <li>
-                            Django Backend.
-                        </li>
-                        <li class="pt-3">
-                            HTML, CSS and Jinja Frontend.
-                        </li>
-                        <li class="pt-3">
-                            Deployed on Hostinger with Apache2
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="
-                flex rounded-lg bg-gray-100 border-4 
-                shadow-lg items-center border-gray-100 m-3
-            ">
-                <img
-                    src="./img/mateodiaz.png"
-                    class="w-48 h-48 object-cover rounded-lg"
-                    alt="Mateo Diaz portfolio cover photo"
-                >
-                <div class="px-3">
-                    <ul class="
-                        list-inside pt-3 font-medium text-2xl
-                        lg:text-lg tracking-wide text-gray-800
-                    ">
-                        <li>
-                            Flask + AlchemySQL Backend.
-                        </li>
-                        <li class="pt-3">
-                            Reactjs + Tailwindcss Frontend.
-                        </li>
-                        <li class="pt-3">
-                            Deployed on Heroku.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="
-                flex rounded-lg bg-gray-100 border-4 shadow-lg
-                items-center border-gray-100 m-3
-            ">
-                <img 
-                    src="./img/aesculapius.png"
-                    class="w-48 h-48 object-cover rounded-lg"
-                    alt="Aesculapius cover image"
-                >
-                <div class="px-3">
-                    <ul class="
-                        list-inside pt-3
-                        font-medium text-2xl lg:text-lg 
-                        tracking-wide text-gray-800
-                    ">
-                        <li>
-                            Django + DRF Backend.
-                        </li>
-                        <li class="pt-3">
-                            AngularJS + Material-UI Frontend.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-        </div>
+        <div 
+            id="projectsSection"
+            class="flex flex-wrap justify-center pt-12 w-full"
+        ></div>
+
     </section>
 
     <section class="py-24">
@@ -318,22 +207,20 @@
                     ">
                         Where I've been
                     </h1>
-                    <ul class="list-inside">
-                        <li class="ml-10 mr-8 text-3xl xl:text-xl px-6">
-                            While I was in high school I got an internship 
-                            in <a href="https://santexgroup.com/">Santex</a>
-                            where I worked on a management software 
-                            for a charity hospital with AngularJS and Django 
-                            with Django Rest Framework.
-                        </li>
-                        <li class="ml-10 mr-8 text-3xl xl:text-xl px-6 py-3">
-                            Worked at a fintech startup called
-                            <a href="https://invera.com.ar/">Invera</a>
-                            for 2 years. I did backend development, some
-                            devops with Ansible and AWS and HTML, CSS and JQuery
-                            frontend development.
-                        </li>
-                    </ul>
+                    <p class="ml-10 mr-8 text-3xl xl:text-xl px-6">
+                        While I was in high school I got an internship 
+                        in <a href="https://santexgroup.com/">Santex</a>
+                        where I worked on a management software 
+                        for a charity hospital with AngularJS and Django 
+                        with Django Rest Framework.
+                    </p>
+                    <p class="ml-10 mr-8 text-3xl xl:text-xl px-6 py-3">
+                        Worked at a fintech startup called
+                        <a href="https://invera.com.ar/">Invera</a>
+                        for 2 years. I did backend development, some
+                        devops with Ansible and AWS and HTML, CSS and JQuery
+                        frontend development.
+                    </p>
                 </div>
                 <div class="
                         text-gray-900
@@ -367,5 +254,87 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const projects = [
+            {
+                url: "https://invera.com.ar",
+                imgUrl: "./img/invera.jpeg",
+                imgAlt: "Invera cover img",
+                tech: [
+                    "Django + DRF Backend.",
+                    "Celery + Redis async task manager.",
+                    "HTML, Sass, Jinja and JQuery Frontend.",
+                    "Elastic Beanstalk and Ansible on EC2."
+                ]
+            },
+            {
+                url: "https://confibra.com.ar",
+                imgUrl: "./img/confibra.png",
+                imgAlt: "Confibra cover img",
+                tech: [
+                    "Django Backend.",
+                    "HTML, CSS and Jinja Frontend.",
+                    "Deployed on Hostinger with Apache2"
+                ]
+            },
+            {
+                url: "http://tutefront.herokuapp.com/",
+                imgUrl: "./img/mateodiaz.png",
+                imgAlt: "Mateo Diaz cover img",
+                tech: [
+                    "Flask + AlchemySQL Backend.",
+                    "Reactjs + Tailwindcss Frontend.",
+                    "Deployed on Heroku."
+                ]
+            },
+            {
+                url: "https://github.com/aesculapiusteam",
+                imgUrl: "./img/aesculapius.png",
+                imgAlt: "Aesculapius cover img",
+                tech: [
+                    "Django + DRF Backend.",
+                    "AngularJS + Material-UI Frontend."
+                ]
+            }
+        ]
+
+        const projTemplate = (t) =>  `
+            <a
+                href="${t.url}"
+                class="
+                    flex rounded-lg bg-gray-100 border-4
+                    shadow-lg items-center border-gray-100 my-3 mx-8 lg:m-3
+                "
+            >
+                <img
+                    src="${t.imgUrl}"
+                    class="w-48 h-48 object-cover rounded-lg"
+                    alt="${t.imgAlt}"
+                >
+                <div class="px-8 lg:px-3">
+                    <ul class="
+                        list-inside pt-3 font-medium text-4xl
+                        lg:text-lg tracking-wide text-gray-800
+                    ">
+                        ${t.tech.map(
+                            (t, i) => {
+                                `<li class=${i>0 ? "lg:pt-3" : "" }>${t}</li>`
+                            }
+                        ).join('')}
+                    </ul>
+                </div>
+            </a>
+        `;
+    
+        const setProjects = (projects) => {
+            const projectsSection = document.getElementById('projectsSection');
+            projects.forEach(p => {
+                projectsSection.innerHTML += projTemplate(p)
+            });
+        };
+
+        setProjects(projects);
+    </script>
 </body>
 </html>

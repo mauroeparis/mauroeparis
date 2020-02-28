@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        courier: 'Courier Prime'
+        quick: 'Quicksand',
+        roboto: 'Roboto'
       },
       fontSize: {
         '7xl': '7rem',

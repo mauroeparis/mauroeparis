@@ -12,6 +12,11 @@ li {
   padding-left: 1.3em;
 }
 
+p {
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
 li:before {
   content: "\f00c"; /* FontAwesome Unicode */
   font-family: FontAwesome;
