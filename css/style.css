@@ -20,3 +20,8 @@ li:before {
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
 }
+
+a {
+  color: #3182ce;
+  font-weight: 500;
+}
