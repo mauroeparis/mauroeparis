@@ -17,6 +17,15 @@ p {
   font-weight: 300;
 }
 
+li {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Oswald';
+}
+
 li:before {
   content: "\f00c"; /* FontAwesome Unicode */
   font-family: FontAwesome;
@@ -29,4 +38,11 @@ li:before {
 a {
   color: #3182ce;
   font-weight: 500;
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
 </head>
@@ -39,9 +39,10 @@
             <h1 class="
                 text-xl leading-tight
                 sm:text-4xl md:text-6xl
-                text-center pt-6 font-quick font-medium
+                text-center pt-6 font-oswald
+                font-black tracking-widest uppercase
             ">
-                Hi, I'm Mauro
+                Hello
             </h1>
             <p class="px-3 sm:px-12 pt-3 sm:pt-8 md:text-4xl lg:text-xl">
                 I'm a fullstack developer based in Córdoba Argentina.
@@ -90,7 +91,7 @@
                 </a>
 
                 <!-- MAIL -->
-                <a href="">
+                <a href="mailto:mauroparis96@gmail.com">
                     <svg aria-hidden="true" focusable="false" data-prefix="far" 
                         data-icon="envelope" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" 
@@ -144,7 +145,7 @@
             <h1 class="
                 text-center text-gray-100
                 py-6 text-5xl lg:text-3xl tracking-widest
-                font-quick uppercase
+                uppercase
             ">
                 Projects I've worked on
             </h1>
@@ -167,7 +168,7 @@
                 class="rounded-t-lg shadow-lg object-cover h-64 w-full"
                 alt="Mauro on a Bariloche dock"
             >
-            <h1 class="text-xxl text-center absolute inset-x-0 top-0">
+            <h1 class="linear-gradient rounded-lg text-xxl text-center absolute inset-x-0 top-0 uppercase">
                 About me
             </h1>
             </img>
@@ -178,7 +179,7 @@
                     ">
                     <h1 class="
                         text-center uppercase font-medium
-                        text-blue-700 text-4xl py-4
+                        text-blue-700 text-4xl py-4 tracking-widest
                     ">
                         Backstory
                     </h1>
@@ -299,27 +300,27 @@
             }
         ]
 
-        const projTemplate = (t) =>  `
+        const projTemplate = (p) =>  `
             <a
-                href="${t.url}"
+                href="${p.url}"
                 class="
                     flex rounded-lg bg-gray-100 border-4
                     shadow-lg items-center border-gray-100 my-3 mx-8 lg:m-3
                 "
             >
                 <img
-                    src="${t.imgUrl}"
+                    src="${p.imgUrl}"
                     class="w-48 h-48 object-cover rounded-lg"
-                    alt="${t.imgAlt}"
+                    alt="${p.imgAlt}"
                 >
                 <div class="px-8 lg:px-3">
                     <ul class="
                         list-inside pt-3 font-medium text-4xl
                         lg:text-lg tracking-wide text-gray-800
                     ">
-                        ${t.tech.map(
+                        ${p.tech.map(
                             (t, i) => {
-                                `<li class=${i>0 ? "lg:pt-3" : "" }>${t}</li>`
+                                return `<li class=${i>0 ? "lg:pt-3" : "" }>${t}</li>`
                             }
                         ).join('')}
                     </ul>

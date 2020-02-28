@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        quick: 'Quicksand',
+        oswald: 'Oswald',
         roboto: 'Roboto'
       },
       fontSize: {
