@@ -59,7 +59,7 @@
 
             <div class="flex w-10/12 mx-auto justify-around py-8 lg:py-12">
                 <!-- GITHUB -->
-                <a href="https://github.com/mauroeparis/">
+                <a href="https://github.com/mauroeparis/" target="_blank">
                     <svg aria-hidden="true" focusable="false" 
                         data-prefix="fab" data-icon="github" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
@@ -72,7 +72,7 @@
                 </a>
 
                 <!-- LINKEDIN -->
-                <a href="https://linkedin.com/in/mauroeparis/">
+                <a href="https://linkedin.com/in/mauroeparis/" target="_blank">
                     <svg aria-hidden="true" focusable="false" data-prefix="fab" 
                         data-icon="linkedin-in" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" 
@@ -84,7 +84,7 @@
                 </a>
                 
                 <!-- INSTAGRAM -->
-                <a href="https://instagram.com/mauroeparis/">
+                <a href="https://instagram.com/mauroeparis/" target="_blank">
                     <svg aria-hidden="true" focusable="false" data-prefix="fab" 
                         data-icon="instagram" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" 
@@ -173,7 +173,11 @@
                 class="rounded-t-lg shadow-lg object-cover h-64 w-full"
                 alt="Mauro on a Bariloche dock"
             >
-            <h1 class="linear-gradient rounded-lg text-xxl text-center absolute inset-x-0 top-0 uppercase">
+            <h1 class="
+                linear-gradient rounded-lg
+                text-xxl text-center uppercase
+                absolute inset-x-0 top-0
+            ">
                 About me
             </h1>
             </img>
@@ -219,14 +223,14 @@
 
                     <p class="ml-10 mr-8 text-5xl xl:text-xl px-6">
                         While I was in high school I got an internship 
-                        in <a href="https://santexgroup.com/">Santex</a>
+                        in <a href="https://santexgroup.com/" target="_blank">Santex</a>
                         where I worked on a management software 
                         for a charity hospital with AngularJS and Django 
                         with Django Rest Framework.
                     </p>
                     <p class="ml-10 mr-8 text-5xl xl:text-xl px-6 py-3">
                         I worked at a fintech startup called
-                        <a href="https://invera.com.ar/">Invera</a>
+                        <a href="https://invera.com.ar/" target="_blank">Invera</a>
                         for 2 years. I did backend development, some
                         devops with Ansible and AWS and frontend development
                         with HTML, CSS and JQuery.
@@ -258,7 +262,10 @@
                     </p>
                     <p class="ml-10 mr-8 text-5xl xl:text-xl px-6 py-3">
                        If you want to know more 
-                        <a href="https://www.dropbox.com/s/kp0i8psc16y2kmk/MauroEParis_en.pdf">
+                        <a 
+                            href="https://www.dropbox.com/s/kp0i8psc16y2kmk/MauroEParis_en.pdf"
+                            target="_blank"
+                        >
                             here is my resume!
                         </a>
                     </p>
@@ -313,9 +320,12 @@
         const projTemplate = (p) =>  `
             <a
                 href="${p.url}"
+                target="_blank"
                 class="
                     flex rounded-lg bg-gray-100 border-4
                     shadow-lg items-center border-gray-100 my-3 mx-8 lg:m-3
+                    transition duration-500 ease-in-out 
+                    transform hover:-translate-y-1 hover:scale-105
                 "
             >
                 <img
