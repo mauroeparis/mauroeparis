@@ -146,24 +146,6 @@
         </div>
     </section>
 
-    <section id="projects" class="flex flex-col pt-24 w-full">
-        <div class="px-8 bg-gray-900 mx-auto rounded-lg shadow-lg">
-            <h1 class="
-                text-center text-gray-100
-                py-6 text-5xl xl:text-3xl tracking-widest
-                uppercase
-            ">
-               Projects
-            </h1>
-        </div>
-    
-        <div 
-            id="projectsSection"
-            class="flex flex-wrap justify-center pt-12 w-full"
-        ></div>
-
-    </section>
-
     <section class="py-24">
         <div class="
             w-11/12 lg:w-11/12 xl:w-10/12
@@ -276,47 +258,7 @@
     </section>
 
     <script>
-        const projects = [
-            {
-                url: "https://invera.com.ar",
-                imgUrl: "./img/invera.jpeg",
-                imgAlt: "Invera cover img",
-                tech: [
-                    "Django + DRF Backend.",
-                    "Celery + Redis async task manager.",
-                    "Elastic Beanstalk and Ansible on EC2."
-                ]
-            },
-            {
-                url: "https://confibra.com.ar",
-                imgUrl: "./img/confibra.png",
-                imgAlt: "Confibra cover img",
-                tech: [
-                    "Django Backend.",
-                    "HTML, CSS and Jinja Frontend.",
-                    "Deployed on Hostinger with Apache2"
-                ]
-            },
-            {
-                url: "http://mateodiazph.com/",
-                imgUrl: "./img/mateodiaz.png",
-                imgAlt: "Mateo Diaz cover img",
-                tech: [
-                    "Flask + AlchemySQL Backend.",
-                    "Reactjs + Tailwindcss Frontend.",
-                    "Deployed on Heroku."
-                ]
-            },
-            {
-                url: "https://github.com/aesculapiusteam",
-                imgUrl: "./img/aesculapius.png",
-                imgAlt: "Aesculapius cover img",
-                tech: [
-                    "Django + DRF Backend.",
-                    "AngularJS + Material-UI Frontend."
-                ]
-            }
-        ]
+        const projects = []
 
         const projTemplate = (p) =>  `
             <a
